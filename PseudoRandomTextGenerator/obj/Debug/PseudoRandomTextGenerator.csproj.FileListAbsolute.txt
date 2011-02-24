@@ -1,5 +1,0 @@
-C:\Users\psexton\Pseudo-Random-Text-Generator\PseudoRandomTextGenerator\bin\Debug\PseudoRandomTextGenerator.dll
-C:\Users\psexton\Pseudo-Random-Text-Generator\PseudoRandomTextGenerator\bin\Debug\PseudoRandomTextGenerator.pdb
-C:\Users\psexton\Pseudo-Random-Text-Generator\PseudoRandomTextGenerator\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\psexton\Pseudo-Random-Text-Generator\PseudoRandomTextGenerator\obj\Debug\PseudoRandomTextGenerator.dll
-C:\Users\psexton\Pseudo-Random-Text-Generator\PseudoRandomTextGenerator\obj\Debug\PseudoRandomTextGenerator.pdb
