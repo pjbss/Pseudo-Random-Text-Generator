@@ -1,0 +1,12 @@
+C:\Users\psexton\Pseudo-Random-Text-Generator\UnitTests\bin\Debug\UnitTests.dll
+C:\Users\psexton\Pseudo-Random-Text-Generator\UnitTests\bin\Debug\UnitTests.pdb
+C:\Users\psexton\Pseudo-Random-Text-Generator\UnitTests\bin\Debug\nunit.framework.dll
+C:\Users\psexton\Pseudo-Random-Text-Generator\UnitTests\bin\Debug\nunit.mocks.dll
+C:\Users\psexton\Pseudo-Random-Text-Generator\UnitTests\bin\Debug\pnunit.framework.dll
+C:\Users\psexton\Pseudo-Random-Text-Generator\UnitTests\bin\Debug\PseudoRandomTextGenerator.dll
+C:\Users\psexton\Pseudo-Random-Text-Generator\UnitTests\bin\Debug\PseudoRandomTextGenerator.pdb
+C:\Users\psexton\Pseudo-Random-Text-Generator\UnitTests\bin\Debug\nunit.framework.xml
+C:\Users\psexton\Pseudo-Random-Text-Generator\UnitTests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\psexton\Pseudo-Random-Text-Generator\UnitTests\obj\Debug\UnitTests.dll
+C:\Users\psexton\Pseudo-Random-Text-Generator\UnitTests\obj\Debug\UnitTests.pdb
+C:\Users\psexton\Pseudo-Random-Text-Generator\UnitTests\bin\Debug\AllsWellThatEndsWell.txt
