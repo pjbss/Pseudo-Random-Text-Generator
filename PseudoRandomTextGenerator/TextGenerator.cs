@@ -36,38 +36,6 @@ namespace PseudoRandomTextGenerator
 			InitializeChain(thisIsMySeedData);
 		}
 
-		public string Write(int minLength, int maxLength)
-		{
-			// once we get a string longer than this we are done
-			// NOTE: minLength is a hard barrier, while maxLength is soft.
-			var length = _random.Next(minLength, maxLength);
-
-			// get the first key
-			var seedString = GetSeedString(_random.Next(_chain.Count));
-			var currentKey = seedString;
-			// keep track of the sentance length
-			var sentanceLength = seedString.Length;
-			// keep the words in a list, so we aren't doing more string manipulation than necessary
-			var words = new List<string> {seedString};
-			
-			string nextWord;
-
-			// while we haven't reached the length
-			// get the next word
-			// add it to the list
-			// increment the sentance length, add one for the space we will add in the join
-			// update the current key by getting the tail and appending the nextWord
-			while (sentanceLength < length)
-			{
-				nextWord = GetNextWord(currentKey);
-				words.Add(nextWord);
-				sentanceLength += (nextWord.Length + 1);
-				currentKey = string.Join(" ", currentKey.Split(Convert.ToChar(" ")).Skip(1)) + " " + nextWord;
-			}
-
-			return string.Join(" ",words);
-		}
-
 		private void ReadStreamAndInitialize(Stream stream)
 		{
 			TextReader reader = new StreamReader(stream);
@@ -113,6 +81,38 @@ namespace PseudoRandomTextGenerator
             }
             else _chain.Add(chainKey, new List<string>() { value  });
         }
+
+		public string Write(int minLength, int maxLength)
+		{
+			// once we get a string longer than this we are done
+			// NOTE: minLength is a hard barrier, while maxLength is soft.
+			var length = _random.Next(minLength, maxLength);
+
+			// get the first key
+			var seedString = GetSeedString(_random.Next(_chain.Count));
+			var currentKey = seedString;
+			// keep track of the sentance length
+			var sentenceLength = seedString.Length;
+			// keep the words in a list, so we aren't doing more string manipulation than necessary
+			var words = new List<string> {seedString};
+			
+			string nextWord;
+
+			// while we haven't reached the length
+			// get the next word
+			// add it to the list
+			// increment the sentence length, add one for the space we will add in the join
+			// update the current key by getting the tail and appending the nextWord
+			while (sentenceLength < length)
+			{
+				nextWord = GetNextWord(currentKey);
+				words.Add(nextWord);
+				sentenceLength += (nextWord.Length + 1);
+				currentKey = string.Join(" ", currentKey.Split(Convert.ToChar(" ")).Skip(1)) + " " + nextWord;
+			}
+
+			return string.Join(" ",words);
+		}
 
         private string GetNextWord(string key)
         {
